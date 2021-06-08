@@ -87,7 +87,7 @@ function onEachFeature(feature, layer) {
   L.geoJson( hoodData ).setStyle({color: "#3388ff"});
 }); */
 
-$.getJSON("https://www.tischstudentphilanthropy.org/consulting/Boston_Neighborhoods.geojson",function(hoodData){
+$.getJSON("Boston_Neighborhoods.geojson",function(hoodData){
   L.geoJson( hoodData, {
     onEachFeature : onEachFeature
   }).addTo(mymap);
